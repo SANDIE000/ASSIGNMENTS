@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body > div {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 20px;
+    
+
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.profile-image{
+    border-radius: 150px 150px;
+
+}
+.skills > h1, .follow > h1, .hobbies > h1 {
+    color: green;
+}
+
+   
+
+}
