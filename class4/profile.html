@@ -4,12 +4,23 @@
          <link rel="stylesheet" href="profile.css">
         <script src="https://kit.fontawesome.com/3c406250e2.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div>
+        <button class="change">change</button>
         <h1>Hello, Iam Sandra</h1><i class="fas fa-smile-beam"></i>
-        <img class="profile-image" src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t1.0-0/c0.2.206.206a/p206x206/56428416_2581395511935745_7023871017730703360_n.jpg?_nc_cat=101&_nc_sid=da31f3&_nc_ohc=pZ37rp3tuCkAX96Uk70&_nc_ht=scontent.fnbo1-1.fna&_nc_tp=27&oh=ba59cf3fdb7476dcdc3a0893f991fb57&oe=5F99EFD7">
+        <button class="hideImage">hide</button>
+        <button class="showImage">show</button>
+        <button class="fadeImage">fadeOut</button>
+        <button class="slideUpImage">slideUp</button>
+        <button class="toggle">toggle</button>
+        <img class="profileImage" src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t1.0-0/c0.2.206.206a/p206x206/56428416_2581395511935745_7023871017730703360_n.jpg?_nc_cat=101&_nc_sid=da31f3&_nc_ohc=pZ37rp3tuCkAX96Uk70&_nc_ht=scontent.fnbo1-1.fna&_nc_tp=27&oh=ba59cf3fdb7476dcdc3a0893f991fb57&oe=5F99EFD7">
+        
+        <p class="Welcome">
+            <button class="click">click</button>
+            WELCOME!!
+        </P>
         <p>
             Iam 23 years old. I completed a bachelors degree in Procurement and Logistics in 2019 at Kyambogo University,Uganda.
             Iam currently pursuing a short course in computer programming. 
@@ -59,4 +70,30 @@
         </div>
         
     </body>
+    <script>
+        $(".hideImage").click(function() {
+            $(".profileImage").hide();
+        });
+        $(".showImage").click(function() {
+            $(".profileImage").show();
+        });
+        $(".fadeImage").hover(function() {
+            $(".profileImage").fadeOut();
+        });
+        $(".slideUpImage").click(function() {
+            $(".profileImage").slideUp();
+        });
+        $(".toggle").dblclick(function() {
+            $(".profileImage").toggle();
+        });
+        $(".change").click(function() {
+            $("body").css("background-color","red");
+        });
+        $(".click").click(function() {
+            $(".welcome").text("Hello!");
+        });
+    </script>
 </html>
+
+  
+    
