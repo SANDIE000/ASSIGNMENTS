@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Guest List</title>
+        <link rel="stylesheet" href="guestslist.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <h2> My Party Guest List</h2>
+    
+    <p>
+        Guest Name: <input class="guestName">
+        <button class="addButton">Add Guest to List</button>
+    </p>
+    
+    <h4>My Guests: <span class="numberOfGuests"></span></h4>
+    <ul class="guestList">
+    
+    </ul>
+    </body>
+
+<script>
+let guests = [];
+
+$(".addButton").click(function() {
+    let newGuest = $(".guestName").val();
+
+guests.push(newGuest);
+    document.querySelector('.guestList').innerHTML="";
+for(let guest of guests){
+    $(".guestList").append(`<li>${guest}</li>`);
+}
+ $(".guest-number").text(guests.length);
+  $(".guestName").val('');
+
+});
+</script>
+</html>

@@ -1,0 +1,21 @@
+.main{
+    background-color: tomato;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+}
+.bttn{
+    border-radius: 100px;
+    color:rgb(0, 132, 255);
+    border-color:rgb(0, 132, 255);
+    width: 10%;
+    height: 30px;
+    font-size: 20px;
+}
+#result{
+    width: 65%;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+
+}
